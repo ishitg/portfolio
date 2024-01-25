@@ -1,0 +1,187 @@
+.top-container {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.circle {
+  @media (min-width: 658px) {
+      position: absolute;
+      height: 200px;
+      width: 400px;
+      left: 50px;
+      border-radius: 300px 300px 0 0;
+      background-color: white;
+      rotate: 180deg;
+  }
+}
+
+.title {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+
+  @media (max-width: 580px) {
+      font-size: 4rem;
+  }
+
+  @media (max-width: 200px) {
+      font-size: 2rem;
+  }
+}
+
+.subtitle {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #646668;
+}
+
+.pro {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+
+.code {
+  position: absolute;
+  height: 200px;
+  top: 70%;
+  left: 70%;
+
+  @media (max-width: 850px) {
+      position: absolute;
+      height: 200px;
+      top: 70%;
+      left: 60%;
+  }
+}
+
+.hello {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro {
+  width: 70%;
+  margin: auto;
+}
+
+.myskills {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  width: 80%; /* Adjusted width for responsiveness */
+  margin: 100px auto 0 auto;
+  text-align: left;
+  row-gap: 2rem;
+}
+
+.coding p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.coding h3 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.chilli-img {
+  position: relative;
+  right: 40px;
+}
+
+.hot-wings h3 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hot-wings p {
+  font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  border: dotted #eaf6f6 6px;
+  border-bottom: none;
+  width: 10%; /* Adjusted width for responsiveness */
+  margin: 100px auto;
+}
+
+.contact h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* Your existing CSS remains unchanged */
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+
+  .title {
+    left: 30%;
+  }
+
+  .subtitle {
+    left: 30%;
+  }
+
+  .code {
+    left: 50%;
+  }
+
+  .parent {
+    grid-template-columns: 1fr;
+  }
+
+  .chilli-img {
+    right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    left: 20%;
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    left: 20%;
+    font-size: 1.8rem;
+  }
+
+  .code {
+    left: 20%;
+  }
+}
+
